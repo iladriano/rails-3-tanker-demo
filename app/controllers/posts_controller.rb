@@ -1,4 +1,13 @@
 class PostsController < ApplicationController
+  def search
+    @posts = Post.search_tank('123')
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @posts }
+    end
+  end   
+
   # GET /posts
   # GET /posts.xml
   def index

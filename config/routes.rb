@@ -2,6 +2,8 @@ Rails3TtDemo::Application.routes.draw do
   resources :posts do
     resources :comments
   end
+  
+  match '/search' => 'posts#search'
 
   get "home/index"
 
