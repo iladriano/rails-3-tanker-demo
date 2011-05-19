@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def search
-    @posts = Post.search_tank('123', :filter_docvars => {0 => [['*', '*']]} )
+    #@posts = Post.search_tank('123', :filter_docvars => {0 => [['*', '*']]} )
+    @posts = Post.search_tank(params[:query])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -11,7 +12,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   def index
-    @posts = Post.search_tank('123')
+    #@posts = Post.search_tank('123')
+    @posts = Post.all
 
     respond_to do |format|
       format.html # index.html.erb
