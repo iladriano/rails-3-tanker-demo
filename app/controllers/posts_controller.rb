@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def search
     #@posts = Post.search_tank('123', :filter_docvars => {0 => [['*', '*']]} )
+    #@posts = Tanker.search_tank([Post], params[:query]) 
     @posts = Post.search_tank(params[:query])
 
     respond_to do |format|
