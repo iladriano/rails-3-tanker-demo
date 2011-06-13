@@ -10,4 +10,8 @@ class Comment < ActiveRecord::Base
   def postname
     self.post.title
   end
+
+  after_save :update_tank_indexes
+  after_destroy :delete_tank_indexes
+
 end
