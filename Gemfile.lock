@@ -28,6 +28,7 @@ GEM
       activemodel (= 3.0.8)
       activesupport (= 3.0.8)
     activesupport (3.0.8)
+    acts_as_taggable (2.0.2)
     arel (2.0.10)
     builder (2.1.2)
     erubis (2.6.6)
@@ -76,6 +77,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_taggable
   json_pure (= 1.4.6)
   rails (= 3.0.8)
   sqlite3-ruby

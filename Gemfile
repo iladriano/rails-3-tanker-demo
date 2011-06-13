@@ -9,6 +9,7 @@ gem 'json_pure', '1.4.6', :require => 'json'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'tanker'
 gem 'will_paginate'
+gem 'acts_as_taggable'
 
 
 # Use unicorn as the web server
