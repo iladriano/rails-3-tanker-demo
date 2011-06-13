@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'rails', '3.0.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,6 +8,7 @@ gem 'json_pure', '1.4.6', :require => 'json'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'tanker'
+gem 'will_paginate'
 
 
 # Use unicorn as the web server
