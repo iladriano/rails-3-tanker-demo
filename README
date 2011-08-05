@@ -7,3 +7,9 @@ echo "Rails3TtDemo::Application.config.index_tank_url = 'PRIVATE URL'" > config/
 2) Create database
 
 rake db:migrate
+
+3) Create index 'rails_3_tanker_demo'
+
+verify index "Running"
+
+Run & test
